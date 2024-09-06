@@ -100,7 +100,7 @@ export default function Home() {
       setServerData()
     }, 1000)
     return () => clearInterval(interval)
-  }, [])
+  }, [setServerData])
   const [currentTab, setCurrentTab] = useState('0')
   return (
     <main className='w-screen min-h-screen'>
