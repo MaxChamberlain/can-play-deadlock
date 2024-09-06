@@ -2,7 +2,17 @@ import Image from 'next/image'
 import DeadlockLogo from './assets/deadlock-logo.png'
 import ListItem from './components/list-item'
 
-const servers = [
+export type Server = {
+  name: string
+  command: string
+  open_times: {
+    weekdays: [number, number]
+    weekends: [number, number]
+  }
+  timezone: string
+}
+
+const servers: Server[] = [
   {
     name: 'North America',
     command: 'citadel_region_override 0',

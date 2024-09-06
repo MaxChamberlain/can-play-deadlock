@@ -6,15 +6,16 @@ import { useEffect, useState } from 'react'
 import Command from './command'
 import WarnIcon from '../assets/warn-icon.svg'
 import Image from 'next/image'
+import { type Server } from '../page'
 
 export default function ListItem({
   server,
   i,
   servers
 }: {
-  server: any
+  server: Server
   i: number
-  servers: any[]
+  servers: Server[]
 }) {
   dayjs.extend(tz)
   dayjs.extend(utc)
