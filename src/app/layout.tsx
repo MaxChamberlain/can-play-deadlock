@@ -30,8 +30,7 @@ export const metadata: Metadata = {
     'Open',
     'Close',
     'Timezone'
-  ],
-  metadataBase: new URL('https://caniplaydeadlock.com')
+  ]
 }
 
 export default function RootLayout({
@@ -42,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
         {children}
       </body>
